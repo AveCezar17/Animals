@@ -1,0 +1,985 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/oleksii/WebstormProjects/Animals',
+6 verbose install   [ 'body-parser',
+6 verbose install     'cookie-parser',
+6 verbose install     'debug',
+6 verbose install     'express',
+6 verbose install     'hbs',
+6 verbose install     'morgan',
+6 verbose install     'serve-favicon',
+6 verbose install     'gulp',
+6 verbose install     'gulp-coffee',
+6 verbose install     'gulp-concat',
+6 verbose install     'gulp-uglify',
+6 verbose install     'gulp-imagemin',
+6 verbose install     'gulp-sourcemaps',
+6 verbose install     'del' ] ]
+7 info preinstall Animals@0.0.0
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'hbs@latest', null ]
+10 verbose cache add name=undefined spec="hbs@latest" args=["hbs@latest",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'hbs@latest',
+11 verbose parsed url   path: 'hbs@latest',
+11 verbose parsed url   href: 'hbs@latest' }
+12 verbose cache add [ 'morgan@latest', null ]
+13 verbose cache add name=undefined spec="morgan@latest" args=["morgan@latest",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'morgan@latest',
+14 verbose parsed url   path: 'morgan@latest',
+14 verbose parsed url   href: 'morgan@latest' }
+15 verbose cache add [ 'serve-favicon@latest', null ]
+16 verbose cache add name=undefined spec="serve-favicon@latest" args=["serve-favicon@latest",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'serve-favicon@latest',
+17 verbose parsed url   path: 'serve-favicon@latest',
+17 verbose parsed url   href: 'serve-favicon@latest' }
+18 verbose cache add name="hbs" spec="latest" args=["hbs","latest"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: 'latest',
+19 verbose parsed url   path: 'latest',
+19 verbose parsed url   href: 'latest' }
+20 verbose addNamed [ 'hbs', 'latest' ]
+21 verbose addNamed [ null, null ]
+22 verbose cache add name="morgan" spec="latest" args=["morgan","latest"]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: 'latest',
+23 verbose parsed url   path: 'latest',
+23 verbose parsed url   href: 'latest' }
+24 verbose addNamed [ 'morgan', 'latest' ]
+25 verbose addNamed [ null, null ]
+26 verbose cache add [ 'gulp@latest', null ]
+27 verbose cache add name=undefined spec="gulp@latest" args=["gulp@latest",null]
+28 verbose parsed url { protocol: null,
+28 verbose parsed url   slashes: null,
+28 verbose parsed url   auth: null,
+28 verbose parsed url   host: null,
+28 verbose parsed url   port: null,
+28 verbose parsed url   hostname: null,
+28 verbose parsed url   hash: null,
+28 verbose parsed url   search: null,
+28 verbose parsed url   query: null,
+28 verbose parsed url   pathname: 'gulp@latest',
+28 verbose parsed url   path: 'gulp@latest',
+28 verbose parsed url   href: 'gulp@latest' }
+29 verbose cache add [ 'gulp-coffee@latest', null ]
+30 verbose cache add name=undefined spec="gulp-coffee@latest" args=["gulp-coffee@latest",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'gulp-coffee@latest',
+31 verbose parsed url   path: 'gulp-coffee@latest',
+31 verbose parsed url   href: 'gulp-coffee@latest' }
+32 verbose cache add name="serve-favicon" spec="latest" args=["serve-favicon","latest"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: 'latest',
+33 verbose parsed url   path: 'latest',
+33 verbose parsed url   href: 'latest' }
+34 verbose addNamed [ 'serve-favicon', 'latest' ]
+35 verbose addNamed [ null, null ]
+36 silly lockFile fee9fd22-hbs-latest hbs@latest
+37 verbose lock hbs@latest /home/oleksii/.npm/fee9fd22-hbs-latest.lock
+38 silly lockFile d2a09fff-morgan-latest morgan@latest
+39 verbose lock morgan@latest /home/oleksii/.npm/d2a09fff-morgan-latest.lock
+40 silly lockFile 690db6aa-serve-favicon-latest serve-favicon@latest
+41 verbose lock serve-favicon@latest /home/oleksii/.npm/690db6aa-serve-favicon-latest.lock
+42 verbose cache add name="gulp" spec="latest" args=["gulp","latest"]
+43 verbose parsed url { protocol: null,
+43 verbose parsed url   slashes: null,
+43 verbose parsed url   auth: null,
+43 verbose parsed url   host: null,
+43 verbose parsed url   port: null,
+43 verbose parsed url   hostname: null,
+43 verbose parsed url   hash: null,
+43 verbose parsed url   search: null,
+43 verbose parsed url   query: null,
+43 verbose parsed url   pathname: 'latest',
+43 verbose parsed url   path: 'latest',
+43 verbose parsed url   href: 'latest' }
+44 verbose addNamed [ 'gulp', 'latest' ]
+45 verbose addNamed [ null, null ]
+46 silly lockFile 429e12c1-gulp-latest gulp@latest
+47 verbose lock gulp@latest /home/oleksii/.npm/429e12c1-gulp-latest.lock
+48 verbose cache add [ 'gulp-concat@latest', null ]
+49 verbose cache add name=undefined spec="gulp-concat@latest" args=["gulp-concat@latest",null]
+50 verbose parsed url { protocol: null,
+50 verbose parsed url   slashes: null,
+50 verbose parsed url   auth: null,
+50 verbose parsed url   host: null,
+50 verbose parsed url   port: null,
+50 verbose parsed url   hostname: null,
+50 verbose parsed url   hash: null,
+50 verbose parsed url   search: null,
+50 verbose parsed url   query: null,
+50 verbose parsed url   pathname: 'gulp-concat@latest',
+50 verbose parsed url   path: 'gulp-concat@latest',
+50 verbose parsed url   href: 'gulp-concat@latest' }
+51 verbose cache add [ 'gulp-uglify@latest', null ]
+52 verbose cache add name=undefined spec="gulp-uglify@latest" args=["gulp-uglify@latest",null]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: 'gulp-uglify@latest',
+53 verbose parsed url   path: 'gulp-uglify@latest',
+53 verbose parsed url   href: 'gulp-uglify@latest' }
+54 verbose cache add [ 'gulp-imagemin@latest', null ]
+55 verbose cache add name=undefined spec="gulp-imagemin@latest" args=["gulp-imagemin@latest",null]
+56 verbose parsed url { protocol: null,
+56 verbose parsed url   slashes: null,
+56 verbose parsed url   auth: null,
+56 verbose parsed url   host: null,
+56 verbose parsed url   port: null,
+56 verbose parsed url   hostname: null,
+56 verbose parsed url   hash: null,
+56 verbose parsed url   search: null,
+56 verbose parsed url   query: null,
+56 verbose parsed url   pathname: 'gulp-imagemin@latest',
+56 verbose parsed url   path: 'gulp-imagemin@latest',
+56 verbose parsed url   href: 'gulp-imagemin@latest' }
+57 verbose cache add [ 'gulp-sourcemaps@latest', null ]
+58 verbose cache add name=undefined spec="gulp-sourcemaps@latest" args=["gulp-sourcemaps@latest",null]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: 'gulp-sourcemaps@latest',
+59 verbose parsed url   path: 'gulp-sourcemaps@latest',
+59 verbose parsed url   href: 'gulp-sourcemaps@latest' }
+60 verbose cache add name="gulp-coffee" spec="latest" args=["gulp-coffee","latest"]
+61 verbose parsed url { protocol: null,
+61 verbose parsed url   slashes: null,
+61 verbose parsed url   auth: null,
+61 verbose parsed url   host: null,
+61 verbose parsed url   port: null,
+61 verbose parsed url   hostname: null,
+61 verbose parsed url   hash: null,
+61 verbose parsed url   search: null,
+61 verbose parsed url   query: null,
+61 verbose parsed url   pathname: 'latest',
+61 verbose parsed url   path: 'latest',
+61 verbose parsed url   href: 'latest' }
+62 verbose addNamed [ 'gulp-coffee', 'latest' ]
+63 verbose addNamed [ null, null ]
+64 silly lockFile 6c2e82c4-gulp-coffee-latest gulp-coffee@latest
+65 verbose lock gulp-coffee@latest /home/oleksii/.npm/6c2e82c4-gulp-coffee-latest.lock
+66 verbose cache add name="gulp-concat" spec="latest" args=["gulp-concat","latest"]
+67 verbose parsed url { protocol: null,
+67 verbose parsed url   slashes: null,
+67 verbose parsed url   auth: null,
+67 verbose parsed url   host: null,
+67 verbose parsed url   port: null,
+67 verbose parsed url   hostname: null,
+67 verbose parsed url   hash: null,
+67 verbose parsed url   search: null,
+67 verbose parsed url   query: null,
+67 verbose parsed url   pathname: 'latest',
+67 verbose parsed url   path: 'latest',
+67 verbose parsed url   href: 'latest' }
+68 verbose addNamed [ 'gulp-concat', 'latest' ]
+69 verbose addNamed [ null, null ]
+70 silly lockFile 8bbbbeeb-gulp-concat-latest gulp-concat@latest
+71 verbose lock gulp-concat@latest /home/oleksii/.npm/8bbbbeeb-gulp-concat-latest.lock
+72 verbose cache add name="gulp-uglify" spec="latest" args=["gulp-uglify","latest"]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: 'latest',
+73 verbose parsed url   path: 'latest',
+73 verbose parsed url   href: 'latest' }
+74 verbose addNamed [ 'gulp-uglify', 'latest' ]
+75 verbose addNamed [ null, null ]
+76 silly lockFile b89f856d-gulp-uglify-latest gulp-uglify@latest
+77 verbose lock gulp-uglify@latest /home/oleksii/.npm/b89f856d-gulp-uglify-latest.lock
+78 verbose cache add name="gulp-imagemin" spec="latest" args=["gulp-imagemin","latest"]
+79 verbose parsed url { protocol: null,
+79 verbose parsed url   slashes: null,
+79 verbose parsed url   auth: null,
+79 verbose parsed url   host: null,
+79 verbose parsed url   port: null,
+79 verbose parsed url   hostname: null,
+79 verbose parsed url   hash: null,
+79 verbose parsed url   search: null,
+79 verbose parsed url   query: null,
+79 verbose parsed url   pathname: 'latest',
+79 verbose parsed url   path: 'latest',
+79 verbose parsed url   href: 'latest' }
+80 verbose addNamed [ 'gulp-imagemin', 'latest' ]
+81 verbose addNamed [ null, null ]
+82 silly lockFile 2a171c0f-gulp-imagemin-latest gulp-imagemin@latest
+83 verbose lock gulp-imagemin@latest /home/oleksii/.npm/2a171c0f-gulp-imagemin-latest.lock
+84 verbose cache add [ 'del@latest', null ]
+85 verbose cache add name=undefined spec="del@latest" args=["del@latest",null]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: 'del@latest',
+86 verbose parsed url   path: 'del@latest',
+86 verbose parsed url   href: 'del@latest' }
+87 verbose cache add [ 'body-parser@latest', null ]
+88 verbose cache add name=undefined spec="body-parser@latest" args=["body-parser@latest",null]
+89 verbose parsed url { protocol: null,
+89 verbose parsed url   slashes: null,
+89 verbose parsed url   auth: null,
+89 verbose parsed url   host: null,
+89 verbose parsed url   port: null,
+89 verbose parsed url   hostname: null,
+89 verbose parsed url   hash: null,
+89 verbose parsed url   search: null,
+89 verbose parsed url   query: null,
+89 verbose parsed url   pathname: 'body-parser@latest',
+89 verbose parsed url   path: 'body-parser@latest',
+89 verbose parsed url   href: 'body-parser@latest' }
+90 verbose cache add [ 'cookie-parser@latest', null ]
+91 verbose cache add name=undefined spec="cookie-parser@latest" args=["cookie-parser@latest",null]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: 'cookie-parser@latest',
+92 verbose parsed url   path: 'cookie-parser@latest',
+92 verbose parsed url   href: 'cookie-parser@latest' }
+93 verbose cache add name="gulp-sourcemaps" spec="latest" args=["gulp-sourcemaps","latest"]
+94 verbose parsed url { protocol: null,
+94 verbose parsed url   slashes: null,
+94 verbose parsed url   auth: null,
+94 verbose parsed url   host: null,
+94 verbose parsed url   port: null,
+94 verbose parsed url   hostname: null,
+94 verbose parsed url   hash: null,
+94 verbose parsed url   search: null,
+94 verbose parsed url   query: null,
+94 verbose parsed url   pathname: 'latest',
+94 verbose parsed url   path: 'latest',
+94 verbose parsed url   href: 'latest' }
+95 verbose addNamed [ 'gulp-sourcemaps', 'latest' ]
+96 verbose addNamed [ null, null ]
+97 silly lockFile eb50e20d-gulp-sourcemaps-latest gulp-sourcemaps@latest
+98 verbose lock gulp-sourcemaps@latest /home/oleksii/.npm/eb50e20d-gulp-sourcemaps-latest.lock
+99 info addNameTag [ 'hbs', 'latest' ]
+100 info addNameTag [ 'morgan', 'latest' ]
+101 info addNameTag [ 'serve-favicon', 'latest' ]
+102 info addNameTag [ 'gulp', 'latest' ]
+103 verbose cache add name="del" spec="latest" args=["del","latest"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: 'latest',
+104 verbose parsed url   path: 'latest',
+104 verbose parsed url   href: 'latest' }
+105 verbose addNamed [ 'del', 'latest' ]
+106 verbose addNamed [ null, null ]
+107 silly lockFile f16e1df0-del-latest del@latest
+108 verbose lock del@latest /home/oleksii/.npm/f16e1df0-del-latest.lock
+109 verbose cache add name="body-parser" spec="latest" args=["body-parser","latest"]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: null,
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: 'latest',
+110 verbose parsed url   path: 'latest',
+110 verbose parsed url   href: 'latest' }
+111 verbose addNamed [ 'body-parser', 'latest' ]
+112 verbose addNamed [ null, null ]
+113 silly lockFile 88319797-body-parser-latest body-parser@latest
+114 verbose lock body-parser@latest /home/oleksii/.npm/88319797-body-parser-latest.lock
+115 verbose cache add [ 'debug@latest', null ]
+116 verbose cache add name=undefined spec="debug@latest" args=["debug@latest",null]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: 'debug@latest',
+117 verbose parsed url   path: 'debug@latest',
+117 verbose parsed url   href: 'debug@latest' }
+118 verbose cache add [ 'express@latest', null ]
+119 verbose cache add name=undefined spec="express@latest" args=["express@latest",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'express@latest',
+120 verbose parsed url   path: 'express@latest',
+120 verbose parsed url   href: 'express@latest' }
+121 verbose cache add name="cookie-parser" spec="latest" args=["cookie-parser","latest"]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: 'latest',
+122 verbose parsed url   path: 'latest',
+122 verbose parsed url   href: 'latest' }
+123 verbose addNamed [ 'cookie-parser', 'latest' ]
+124 verbose addNamed [ null, null ]
+125 silly lockFile a995bebb-cookie-parser-latest cookie-parser@latest
+126 verbose lock cookie-parser@latest /home/oleksii/.npm/a995bebb-cookie-parser-latest.lock
+127 info addNameTag [ 'gulp-coffee', 'latest' ]
+128 info addNameTag [ 'gulp-concat', 'latest' ]
+129 info addNameTag [ 'gulp-uglify', 'latest' ]
+130 info addNameTag [ 'gulp-imagemin', 'latest' ]
+131 verbose cache add name="debug" spec="latest" args=["debug","latest"]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: 'latest',
+132 verbose parsed url   path: 'latest',
+132 verbose parsed url   href: 'latest' }
+133 verbose addNamed [ 'debug', 'latest' ]
+134 verbose addNamed [ null, null ]
+135 silly lockFile 2281a8d9-debug-latest debug@latest
+136 verbose lock debug@latest /home/oleksii/.npm/2281a8d9-debug-latest.lock
+137 verbose cache add name="express" spec="latest" args=["express","latest"]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: 'latest',
+138 verbose parsed url   path: 'latest',
+138 verbose parsed url   href: 'latest' }
+139 verbose addNamed [ 'express', 'latest' ]
+140 verbose addNamed [ null, null ]
+141 silly lockFile c30a01ab-express-latest express@latest
+142 verbose lock express@latest /home/oleksii/.npm/c30a01ab-express-latest.lock
+143 verbose request where is /gulp-coffee
+144 verbose request registry https://registry.npmjs.org/
+145 verbose request id 24ecdeaea04d833e
+146 verbose url raw /gulp-coffee
+147 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-coffee' ]
+148 verbose url resolved https://registry.npmjs.org/gulp-coffee
+149 verbose request where is https://registry.npmjs.org/gulp-coffee
+150 info trying registry request attempt 1 at 01:05:16
+151 http GET https://registry.npmjs.org/gulp-coffee
+152 info addNameTag [ 'gulp-sourcemaps', 'latest' ]
+153 info addNameTag [ 'del', 'latest' ]
+154 info addNameTag [ 'body-parser', 'latest' ]
+155 info addNameTag [ 'cookie-parser', 'latest' ]
+156 verbose request where is /gulp-sourcemaps
+157 verbose request registry https://registry.npmjs.org/
+158 verbose url raw /gulp-sourcemaps
+159 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-sourcemaps' ]
+160 verbose url resolved https://registry.npmjs.org/gulp-sourcemaps
+161 verbose request where is https://registry.npmjs.org/gulp-sourcemaps
+162 info trying registry request attempt 1 at 01:05:16
+163 http GET https://registry.npmjs.org/gulp-sourcemaps
+164 info addNameTag [ 'debug', 'latest' ]
+165 info addNameTag [ 'express', 'latest' ]
+166 verbose request where is /morgan
+167 verbose request registry https://registry.npmjs.org/
+168 verbose url raw /morgan
+169 verbose url resolving [ 'https://registry.npmjs.org/', './morgan' ]
+170 verbose url resolved https://registry.npmjs.org/morgan
+171 verbose request where is https://registry.npmjs.org/morgan
+172 info trying registry request attempt 1 at 01:05:16
+173 verbose etag "E3R1WQTQE5TC0TNP3H18U0LII"
+174 http GET https://registry.npmjs.org/morgan
+175 verbose request where is /serve-favicon
+176 verbose request registry https://registry.npmjs.org/
+177 verbose url raw /serve-favicon
+178 verbose url resolving [ 'https://registry.npmjs.org/', './serve-favicon' ]
+179 verbose url resolved https://registry.npmjs.org/serve-favicon
+180 verbose request where is https://registry.npmjs.org/serve-favicon
+181 info trying registry request attempt 1 at 01:05:16
+182 verbose etag "2O8HCBCNR4B0ATP541PTH2SOI"
+183 http GET https://registry.npmjs.org/serve-favicon
+184 verbose request where is /hbs
+185 verbose request registry https://registry.npmjs.org/
+186 verbose url raw /hbs
+187 verbose url resolving [ 'https://registry.npmjs.org/', './hbs' ]
+188 verbose url resolved https://registry.npmjs.org/hbs
+189 verbose request where is https://registry.npmjs.org/hbs
+190 info trying registry request attempt 1 at 01:05:16
+191 verbose etag "BAOEVUR87GKBV0FQTTB3IF56C"
+192 http GET https://registry.npmjs.org/hbs
+193 verbose request where is /gulp-concat
+194 verbose request registry https://registry.npmjs.org/
+195 verbose url raw /gulp-concat
+196 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-concat' ]
+197 verbose url resolved https://registry.npmjs.org/gulp-concat
+198 verbose request where is https://registry.npmjs.org/gulp-concat
+199 info trying registry request attempt 1 at 01:05:16
+200 verbose etag "AWSNZ28VR4YPV1YZI0RECLJFR"
+201 http GET https://registry.npmjs.org/gulp-concat
+202 verbose request where is /gulp-imagemin
+203 verbose request registry https://registry.npmjs.org/
+204 verbose url raw /gulp-imagemin
+205 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-imagemin' ]
+206 verbose url resolved https://registry.npmjs.org/gulp-imagemin
+207 verbose request where is https://registry.npmjs.org/gulp-imagemin
+208 info trying registry request attempt 1 at 01:05:16
+209 verbose etag "CO4LRI936EXPCEGSZRU0UD61E"
+210 http GET https://registry.npmjs.org/gulp-imagemin
+211 verbose request where is /del
+212 verbose request registry https://registry.npmjs.org/
+213 verbose url raw /del
+214 verbose url resolving [ 'https://registry.npmjs.org/', './del' ]
+215 verbose url resolved https://registry.npmjs.org/del
+216 verbose request where is https://registry.npmjs.org/del
+217 info trying registry request attempt 1 at 01:05:16
+218 verbose etag "4WEN5ZI8TSTOA42N2068ZICZ1"
+219 http GET https://registry.npmjs.org/del
+220 verbose request where is /cookie-parser
+221 verbose request registry https://registry.npmjs.org/
+222 verbose url raw /cookie-parser
+223 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-parser' ]
+224 verbose url resolved https://registry.npmjs.org/cookie-parser
+225 verbose request where is https://registry.npmjs.org/cookie-parser
+226 info trying registry request attempt 1 at 01:05:16
+227 verbose etag "ATT6DF4BR4TFTXRQBFYP3Q0ZF"
+228 http GET https://registry.npmjs.org/cookie-parser
+229 verbose request where is /gulp
+230 verbose request registry https://registry.npmjs.org/
+231 verbose url raw /gulp
+232 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+233 verbose url resolved https://registry.npmjs.org/gulp
+234 verbose request where is https://registry.npmjs.org/gulp
+235 info trying registry request attempt 1 at 01:05:16
+236 verbose etag "6EMM2KHTR3OVADTGMBHSP3HXJ"
+237 http GET https://registry.npmjs.org/gulp
+238 verbose request where is /body-parser
+239 verbose request registry https://registry.npmjs.org/
+240 verbose url raw /body-parser
+241 verbose url resolving [ 'https://registry.npmjs.org/', './body-parser' ]
+242 verbose url resolved https://registry.npmjs.org/body-parser
+243 verbose request where is https://registry.npmjs.org/body-parser
+244 info trying registry request attempt 1 at 01:05:16
+245 verbose etag "DNI9YFLOYPVF5WZTR7416TL0V"
+246 http GET https://registry.npmjs.org/body-parser
+247 verbose request where is /gulp-uglify
+248 verbose request registry https://registry.npmjs.org/
+249 verbose url raw /gulp-uglify
+250 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-uglify' ]
+251 verbose url resolved https://registry.npmjs.org/gulp-uglify
+252 verbose request where is https://registry.npmjs.org/gulp-uglify
+253 info trying registry request attempt 1 at 01:05:16
+254 verbose etag "D626QIBV4V7IVBM1EC8H0VTI"
+255 http GET https://registry.npmjs.org/gulp-uglify
+256 verbose request where is /debug
+257 verbose request registry https://registry.npmjs.org/
+258 verbose url raw /debug
+259 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+260 verbose url resolved https://registry.npmjs.org/debug
+261 verbose request where is https://registry.npmjs.org/debug
+262 info trying registry request attempt 1 at 01:05:16
+263 verbose etag "A4O4GIOEMGLQCYKOSG0CD3VZS"
+264 http GET https://registry.npmjs.org/debug
+265 http 200 https://registry.npmjs.org/gulp-coffee
+266 silly registry.get cb [ 200,
+266 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+266 silly registry.get     etag: '"9WD30CIRG30CC8BSD28WCFZ9E"',
+266 silly registry.get     'content-type': 'application/json',
+266 silly registry.get     'content-encoding': 'gzip',
+266 silly registry.get     'cache-control': 'max-age=300',
+266 silly registry.get     'content-length': '5244',
+266 silly registry.get     'accept-ranges': 'bytes',
+266 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:17 GMT',
+266 silly registry.get     via: '1.1 varnish',
+266 silly registry.get     age: '73',
+266 silly registry.get     connection: 'keep-alive',
+266 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+266 silly registry.get     'x-cache': 'HIT',
+266 silly registry.get     'x-cache-hits': '1',
+266 silly registry.get     'x-timer': 'S1460585057.926544,VS0,VE0',
+266 silly registry.get     vary: 'Accept-Encoding' } ]
+267 verbose addNamed [ 'gulp-coffee', '2.3.2' ]
+268 verbose addNamed [ '2.3.2', '2.3.2' ]
+269 silly lockFile b85c5c7a-gulp-coffee-2-3-2 gulp-coffee@2.3.2
+270 verbose lock gulp-coffee@2.3.2 /home/oleksii/.npm/b85c5c7a-gulp-coffee-2-3-2.lock
+271 silly lockFile 16f787d1-ulp-coffee-gulp-coffee-2-3-2-tgz https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+272 verbose lock https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz /home/oleksii/.npm/16f787d1-ulp-coffee-gulp-coffee-2-3-2-tgz.lock
+273 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz',
+273 verbose addRemoteTarball   'e85413c95a6f7695ea160fb590cc578f3dbda5b1' ]
+274 info retry fetch attempt 1 at 01:05:16
+275 verbose fetch to= /tmp/npm-18812-3YfHi321/registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+276 http GET https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+277 verbose request where is /express
+278 verbose request registry https://registry.npmjs.org/
+279 verbose url raw /express
+280 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+281 verbose url resolved https://registry.npmjs.org/express
+282 verbose request where is https://registry.npmjs.org/express
+283 info trying registry request attempt 1 at 01:05:16
+284 verbose etag "AA6GQLVOSYLOINDNIAHBJ4GZ2"
+285 http GET https://registry.npmjs.org/express
+286 http 304 https://registry.npmjs.org/gulp-concat
+287 silly registry.get cb [ 304,
+287 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:17 GMT',
+287 silly registry.get     via: '1.1 varnish',
+287 silly registry.get     'cache-control': 'max-age=300',
+287 silly registry.get     etag: '"AWSNZ28VR4YPV1YZI0RECLJFR"',
+287 silly registry.get     age: '263',
+287 silly registry.get     connection: 'keep-alive',
+287 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+287 silly registry.get     'x-cache': 'HIT',
+287 silly registry.get     'x-cache-hits': '5',
+287 silly registry.get     'x-timer': 'S1460585057.975870,VS0,VE0',
+287 silly registry.get     vary: 'Accept-Encoding' } ]
+288 verbose etag https://registry.npmjs.org/gulp-concat from cache
+289 verbose addNamed [ 'gulp-concat', '2.6.0' ]
+290 verbose addNamed [ '2.6.0', '2.6.0' ]
+291 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+292 verbose lock gulp-concat@2.6.0 /home/oleksii/.npm/03b8a742-gulp-concat-2-6-0.lock
+293 http 200 https://registry.npmjs.org/gulp-sourcemaps
+294 silly registry.get cb [ 200,
+294 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+294 silly registry.get     etag: '"E14ACUC3L5SIU71QWDOUKSPS3"',
+294 silly registry.get     'content-type': 'application/json',
+294 silly registry.get     'cache-control': 'max-age=300',
+294 silly registry.get     'content-length': '59135',
+294 silly registry.get     'accept-ranges': 'bytes',
+294 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:17 GMT',
+294 silly registry.get     via: '1.1 varnish',
+294 silly registry.get     age: '143',
+294 silly registry.get     connection: 'keep-alive',
+294 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+294 silly registry.get     'x-cache': 'HIT',
+294 silly registry.get     'x-cache-hits': '2',
+294 silly registry.get     'x-timer': 'S1460585057.930521,VS0,VE0',
+294 silly registry.get     vary: 'Accept-Encoding' } ]
+295 http 304 https://registry.npmjs.org/gulp-imagemin
+296 silly registry.get cb [ 304,
+296 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+296 silly registry.get     via: '1.1 varnish',
+296 silly registry.get     'cache-control': 'max-age=300',
+296 silly registry.get     etag: '"CO4LRI936EXPCEGSZRU0UD61E"',
+296 silly registry.get     age: '239',
+296 silly registry.get     connection: 'keep-alive',
+296 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+296 silly registry.get     'x-cache': 'HIT',
+296 silly registry.get     'x-cache-hits': '1',
+296 silly registry.get     'x-timer': 'S1460585058.027759,VS0,VE0',
+296 silly registry.get     vary: 'Accept-Encoding' } ]
+297 verbose etag https://registry.npmjs.org/gulp-imagemin from cache
+298 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+299 silly lockFile 03b8a742-gulp-concat-2-6-0 gulp-concat@2.6.0
+300 silly lockFile 8bbbbeeb-gulp-concat-latest gulp-concat@latest
+301 silly lockFile 8bbbbeeb-gulp-concat-latest gulp-concat@latest
+302 verbose addNamed [ 'gulp-sourcemaps', '1.6.0' ]
+303 verbose addNamed [ '1.6.0', '1.6.0' ]
+304 silly lockFile d4931dcb-gulp-sourcemaps-1-6-0 gulp-sourcemaps@1.6.0
+305 verbose lock gulp-sourcemaps@1.6.0 /home/oleksii/.npm/d4931dcb-gulp-sourcemaps-1-6-0.lock
+306 verbose addNamed [ 'gulp-imagemin', '2.4.0' ]
+307 verbose addNamed [ '2.4.0', '2.4.0' ]
+308 silly lockFile d20b8d4f-gulp-imagemin-2-4-0 gulp-imagemin@2.4.0
+309 verbose lock gulp-imagemin@2.4.0 /home/oleksii/.npm/d20b8d4f-gulp-imagemin-2-4-0.lock
+310 silly lockFile bfdfc8a9-cemaps-gulp-sourcemaps-1-6-0-tgz https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+311 verbose lock https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz /home/oleksii/.npm/bfdfc8a9-cemaps-gulp-sourcemaps-1-6-0-tgz.lock
+312 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz',
+312 verbose addRemoteTarball   'b86ff349d801ceb56e1d9e7dc7bbcb4b7dee600c' ]
+313 info retry fetch attempt 1 at 01:05:17
+314 verbose fetch to= /tmp/npm-18812-3YfHi321/registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+315 info already installed gulp-concat@2.6.0
+316 http GET https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+317 silly lockFile d20b8d4f-gulp-imagemin-2-4-0 gulp-imagemin@2.4.0
+318 silly lockFile d20b8d4f-gulp-imagemin-2-4-0 gulp-imagemin@2.4.0
+319 silly lockFile 2a171c0f-gulp-imagemin-latest gulp-imagemin@latest
+320 silly lockFile 2a171c0f-gulp-imagemin-latest gulp-imagemin@latest
+321 info already installed gulp-imagemin@2.4.0
+322 http 304 https://registry.npmjs.org/cookie-parser
+323 silly registry.get cb [ 304,
+323 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+323 silly registry.get     via: '1.1 varnish',
+323 silly registry.get     'cache-control': 'max-age=300',
+323 silly registry.get     etag: '"ATT6DF4BR4TFTXRQBFYP3Q0ZF"',
+323 silly registry.get     age: '149',
+323 silly registry.get     connection: 'keep-alive',
+323 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+323 silly registry.get     'x-cache': 'HIT',
+323 silly registry.get     'x-cache-hits': '1',
+323 silly registry.get     'x-timer': 'S1460585058.082040,VS0,VE0',
+323 silly registry.get     vary: 'Accept-Encoding' } ]
+324 verbose etag https://registry.npmjs.org/cookie-parser from cache
+325 http 304 https://registry.npmjs.org/serve-favicon
+326 silly registry.get cb [ 304,
+326 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+326 silly registry.get     via: '1.1 varnish',
+326 silly registry.get     'cache-control': 'max-age=300',
+326 silly registry.get     etag: '"2O8HCBCNR4B0ATP541PTH2SOI"',
+326 silly registry.get     age: '225',
+326 silly registry.get     connection: 'keep-alive',
+326 silly registry.get     'x-served-by': 'cache-fra1243-FRA',
+326 silly registry.get     'x-cache': 'HIT',
+326 silly registry.get     'x-cache-hits': '1',
+326 silly registry.get     'x-timer': 'S1460585058.085228,VS0,VE0',
+326 silly registry.get     vary: 'Accept-Encoding' } ]
+327 verbose etag https://registry.npmjs.org/serve-favicon from cache
+328 http 200 https://registry.npmjs.org/morgan
+329 silly registry.get cb [ 200,
+329 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+329 silly registry.get     etag: '"4SL397PL80M05KRF7CGCD38XI"',
+329 silly registry.get     'content-type': 'application/json',
+329 silly registry.get     'content-encoding': 'gzip',
+329 silly registry.get     'cache-control': 'max-age=300',
+329 silly registry.get     'content-length': '8771',
+329 silly registry.get     'accept-ranges': 'bytes',
+329 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+329 silly registry.get     via: '1.1 varnish',
+329 silly registry.get     age: '225',
+329 silly registry.get     connection: 'keep-alive',
+329 silly registry.get     'x-served-by': 'cache-fra1240-FRA',
+329 silly registry.get     'x-cache': 'HIT',
+329 silly registry.get     'x-cache-hits': '2',
+329 silly registry.get     'x-timer': 'S1460585058.080532,VS0,VE0',
+329 silly registry.get     vary: 'Accept-Encoding' } ]
+330 http 200 https://registry.npmjs.org/del
+331 silly registry.get cb [ 200,
+331 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+331 silly registry.get     etag: '"44ZV0617EDCD6JTA2GCLT4YWC"',
+331 silly registry.get     'content-type': 'application/json',
+331 silly registry.get     'content-encoding': 'gzip',
+331 silly registry.get     'cache-control': 'max-age=300',
+331 silly registry.get     'content-length': '4952',
+331 silly registry.get     'accept-ranges': 'bytes',
+331 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+331 silly registry.get     via: '1.1 varnish',
+331 silly registry.get     age: '143',
+331 silly registry.get     connection: 'keep-alive',
+331 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+331 silly registry.get     'x-cache': 'HIT',
+331 silly registry.get     'x-cache-hits': '1',
+331 silly registry.get     'x-timer': 'S1460585058.077411,VS0,VE0',
+331 silly registry.get     vary: 'Accept-Encoding' } ]
+332 verbose addNamed [ 'cookie-parser', '1.4.1' ]
+333 verbose addNamed [ '1.4.1', '1.4.1' ]
+334 silly lockFile 7a4e9fb6-cookie-parser-1-4-1 cookie-parser@1.4.1
+335 verbose lock cookie-parser@1.4.1 /home/oleksii/.npm/7a4e9fb6-cookie-parser-1-4-1.lock
+336 verbose addNamed [ 'serve-favicon', '2.3.0' ]
+337 verbose addNamed [ '2.3.0', '2.3.0' ]
+338 silly lockFile d210d889-serve-favicon-2-3-0 serve-favicon@2.3.0
+339 verbose lock serve-favicon@2.3.0 /home/oleksii/.npm/d210d889-serve-favicon-2-3-0.lock
+340 verbose addNamed [ 'morgan', '1.7.0' ]
+341 verbose addNamed [ '1.7.0', '1.7.0' ]
+342 silly lockFile 82b7dd69-morgan-1-7-0 morgan@1.7.0
+343 verbose lock morgan@1.7.0 /home/oleksii/.npm/82b7dd69-morgan-1-7-0.lock
+344 verbose addNamed [ 'del', '2.2.0' ]
+345 verbose addNamed [ '2.2.0', '2.2.0' ]
+346 silly lockFile aed99758-del-2-2-0 del@2.2.0
+347 verbose lock del@2.2.0 /home/oleksii/.npm/aed99758-del-2-2-0.lock
+348 http 304 https://registry.npmjs.org/body-parser
+349 silly registry.get cb [ 304,
+349 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+349 silly registry.get     via: '1.1 varnish',
+349 silly registry.get     'cache-control': 'max-age=300',
+349 silly registry.get     etag: '"DNI9YFLOYPVF5WZTR7416TL0V"',
+349 silly registry.get     age: '296',
+349 silly registry.get     connection: 'keep-alive',
+349 silly registry.get     'x-served-by': 'cache-fra1240-FRA',
+349 silly registry.get     'x-cache': 'HIT',
+349 silly registry.get     'x-cache-hits': '4',
+349 silly registry.get     'x-timer': 'S1460585058.143606,VS0,VE0',
+349 silly registry.get     vary: 'Accept-Encoding' } ]
+350 verbose etag https://registry.npmjs.org/body-parser from cache
+351 http 304 https://registry.npmjs.org/gulp-uglify
+352 silly registry.get cb [ 304,
+352 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+352 silly registry.get     via: '1.1 varnish',
+352 silly registry.get     'cache-control': 'max-age=300',
+352 silly registry.get     etag: '"D626QIBV4V7IVBM1EC8H0VTI"',
+352 silly registry.get     age: '277',
+352 silly registry.get     connection: 'keep-alive',
+352 silly registry.get     'x-served-by': 'cache-fra1247-FRA',
+352 silly registry.get     'x-cache': 'HIT',
+352 silly registry.get     'x-cache-hits': '3',
+352 silly registry.get     'x-timer': 'S1460585058.151308,VS0,VE0',
+352 silly registry.get     vary: 'Accept-Encoding' } ]
+353 verbose etag https://registry.npmjs.org/gulp-uglify from cache
+354 http 304 https://registry.npmjs.org/debug
+355 silly registry.get cb [ 304,
+355 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+355 silly registry.get     via: '1.1 varnish',
+355 silly registry.get     'cache-control': 'max-age=300',
+355 silly registry.get     etag: '"A4O4GIOEMGLQCYKOSG0CD3VZS"',
+355 silly registry.get     age: '24',
+355 silly registry.get     connection: 'keep-alive',
+355 silly registry.get     'x-served-by': 'cache-fra1243-FRA',
+355 silly registry.get     'x-cache': 'HIT',
+355 silly registry.get     'x-cache-hits': '3',
+355 silly registry.get     'x-timer': 'S1460585058.157183,VS0,VE0',
+355 silly registry.get     vary: 'Accept-Encoding' } ]
+356 verbose etag https://registry.npmjs.org/debug from cache
+357 silly lockFile 82b7dd69-morgan-1-7-0 morgan@1.7.0
+358 silly lockFile 82b7dd69-morgan-1-7-0 morgan@1.7.0
+359 verbose addNamed [ 'gulp-uglify', '1.5.3' ]
+360 verbose addNamed [ '1.5.3', '1.5.3' ]
+361 silly lockFile e4f052c9-gulp-uglify-1-5-3 gulp-uglify@1.5.3
+362 verbose lock gulp-uglify@1.5.3 /home/oleksii/.npm/e4f052c9-gulp-uglify-1-5-3.lock
+363 silly lockFile 7a4e9fb6-cookie-parser-1-4-1 cookie-parser@1.4.1
+364 silly lockFile 7a4e9fb6-cookie-parser-1-4-1 cookie-parser@1.4.1
+365 http 200 https://registry.npmjs.org/gulp
+366 silly registry.get cb [ 200,
+366 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+366 silly registry.get     etag: '"BCLNRKLR14S4LVFG7IO5YWW52"',
+366 silly registry.get     'content-type': 'application/json',
+366 silly registry.get     'content-encoding': 'gzip',
+366 silly registry.get     'cache-control': 'max-age=300',
+366 silly registry.get     'content-length': '18097',
+366 silly registry.get     'accept-ranges': 'bytes',
+366 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+366 silly registry.get     via: '1.1 varnish',
+366 silly registry.get     age: '148',
+366 silly registry.get     connection: 'keep-alive',
+366 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+366 silly registry.get     'x-cache': 'HIT',
+366 silly registry.get     'x-cache-hits': '1',
+366 silly registry.get     'x-timer': 'S1460585058.142092,VS0,VE0',
+366 silly registry.get     vary: 'Accept-Encoding' } ]
+367 silly lockFile d2a09fff-morgan-latest morgan@latest
+368 silly lockFile d2a09fff-morgan-latest morgan@latest
+369 verbose addNamed [ 'debug', '2.2.0' ]
+370 verbose addNamed [ '2.2.0', '2.2.0' ]
+371 silly lockFile 82f99b48-debug-2-2-0 debug@2.2.0
+372 verbose lock debug@2.2.0 /home/oleksii/.npm/82f99b48-debug-2-2-0.lock
+373 silly lockFile a995bebb-cookie-parser-latest cookie-parser@latest
+374 silly lockFile a995bebb-cookie-parser-latest cookie-parser@latest
+375 silly lockFile 6a2e9ff9-stry-npmjs-org-del-del-2-2-0-tgz https://registry.npmjs.org/del/-/del-2.2.0.tgz
+376 verbose lock https://registry.npmjs.org/del/-/del-2.2.0.tgz /home/oleksii/.npm/6a2e9ff9-stry-npmjs-org-del-del-2-2-0-tgz.lock
+377 verbose addRemoteTarball [ 'https://registry.npmjs.org/del/-/del-2.2.0.tgz',
+377 verbose addRemoteTarball   '9a50f04bf37325e283b4f44e985336c252456bd5' ]
+378 info retry fetch attempt 1 at 01:05:17
+379 verbose fetch to= /tmp/npm-18812-3YfHi321/registry.npmjs.org/del/-/del-2.2.0.tgz
+380 verbose addNamed [ 'body-parser', '1.15.0' ]
+381 verbose addNamed [ '1.15.0', '1.15.0' ]
+382 silly lockFile 0f65416a-body-parser-1-15-0 body-parser@1.15.0
+383 verbose lock body-parser@1.15.0 /home/oleksii/.npm/0f65416a-body-parser-1-15-0.lock
+384 verbose addNamed [ 'gulp', '3.9.1' ]
+385 verbose addNamed [ '3.9.1', '3.9.1' ]
+386 silly lockFile d9f1ef79-gulp-3-9-1 gulp@3.9.1
+387 verbose lock gulp@3.9.1 /home/oleksii/.npm/d9f1ef79-gulp-3-9-1.lock
+388 http GET https://registry.npmjs.org/del/-/del-2.2.0.tgz
+389 info already installed morgan@1.7.0
+390 http 200 https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+391 silly lockFile d210d889-serve-favicon-2-3-0 serve-favicon@2.3.0
+392 silly lockFile d210d889-serve-favicon-2-3-0 serve-favicon@2.3.0
+393 silly lockFile 690db6aa-serve-favicon-latest serve-favicon@latest
+394 silly lockFile 690db6aa-serve-favicon-latest serve-favicon@latest
+395 info already installed cookie-parser@1.4.1
+396 http 200 https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+397 silly lockFile e4f052c9-gulp-uglify-1-5-3 gulp-uglify@1.5.3
+398 silly lockFile e4f052c9-gulp-uglify-1-5-3 gulp-uglify@1.5.3
+399 silly lockFile b89f856d-gulp-uglify-latest gulp-uglify@latest
+400 silly lockFile b89f856d-gulp-uglify-latest gulp-uglify@latest
+401 silly lockFile 82f99b48-debug-2-2-0 debug@2.2.0
+402 silly lockFile 82f99b48-debug-2-2-0 debug@2.2.0
+403 info already installed serve-favicon@2.3.0
+404 silly lockFile 2281a8d9-debug-latest debug@latest
+405 silly lockFile 2281a8d9-debug-latest debug@latest
+406 silly lockFile 16f787d1-ulp-coffee-gulp-coffee-2-3-2-tgz https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+407 silly lockFile 16f787d1-ulp-coffee-gulp-coffee-2-3-2-tgz https://registry.npmjs.org/gulp-coffee/-/gulp-coffee-2.3.2.tgz
+408 info already installed gulp-uglify@1.5.3
+409 silly lockFile b85c5c7a-gulp-coffee-2-3-2 gulp-coffee@2.3.2
+410 silly lockFile b85c5c7a-gulp-coffee-2-3-2 gulp-coffee@2.3.2
+411 info already installed debug@2.2.0
+412 silly lockFile 6c2e82c4-gulp-coffee-latest gulp-coffee@latest
+413 silly lockFile 6c2e82c4-gulp-coffee-latest gulp-coffee@latest
+414 silly lockFile bfdfc8a9-cemaps-gulp-sourcemaps-1-6-0-tgz https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+415 silly lockFile bfdfc8a9-cemaps-gulp-sourcemaps-1-6-0-tgz https://registry.npmjs.org/gulp-sourcemaps/-/gulp-sourcemaps-1.6.0.tgz
+416 silly lockFile d4931dcb-gulp-sourcemaps-1-6-0 gulp-sourcemaps@1.6.0
+417 silly lockFile d4931dcb-gulp-sourcemaps-1-6-0 gulp-sourcemaps@1.6.0
+418 silly lockFile eb50e20d-gulp-sourcemaps-latest gulp-sourcemaps@latest
+419 silly lockFile eb50e20d-gulp-sourcemaps-latest gulp-sourcemaps@latest
+420 http 200 https://registry.npmjs.org/express
+421 silly registry.get cb [ 200,
+421 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+421 silly registry.get     etag: '"F5JO6Q2V0Z3PAZIMIYIY1JJ7S"',
+421 silly registry.get     'content-type': 'application/json',
+421 silly registry.get     'content-encoding': 'gzip',
+421 silly registry.get     'cache-control': 'max-age=300',
+421 silly registry.get     'content-length': '54190',
+421 silly registry.get     'accept-ranges': 'bytes',
+421 silly registry.get     date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+421 silly registry.get     via: '1.1 varnish',
+421 silly registry.get     age: '181',
+421 silly registry.get     connection: 'keep-alive',
+421 silly registry.get     'x-served-by': 'cache-fra1237-FRA',
+421 silly registry.get     'x-cache': 'HIT',
+421 silly registry.get     'x-cache-hits': '2',
+421 silly registry.get     'x-timer': 'S1460585058.202126,VS0,VE0',
+421 silly registry.get     vary: 'Accept-Encoding' } ]
+422 silly lockFile 0f65416a-body-parser-1-15-0 body-parser@1.15.0
+423 silly lockFile 0f65416a-body-parser-1-15-0 body-parser@1.15.0
+424 silly lockFile d9f1ef79-gulp-3-9-1 gulp@3.9.1
+425 silly lockFile d9f1ef79-gulp-3-9-1 gulp@3.9.1
+426 silly lockFile 88319797-body-parser-latest body-parser@latest
+427 silly lockFile 88319797-body-parser-latest body-parser@latest
+428 silly lockFile 429e12c1-gulp-latest gulp@latest
+429 silly lockFile 429e12c1-gulp-latest gulp@latest
+430 info already installed body-parser@1.15.0
+431 info already installed gulp@3.9.1
+432 verbose addNamed [ 'express', '4.13.4' ]
+433 verbose addNamed [ '4.13.4', '4.13.4' ]
+434 silly lockFile 23607823-express-4-13-4 express@4.13.4
+435 verbose lock express@4.13.4 /home/oleksii/.npm/23607823-express-4-13-4.lock
+436 silly lockFile 23607823-express-4-13-4 express@4.13.4
+437 silly lockFile 23607823-express-4-13-4 express@4.13.4
+438 silly lockFile c30a01ab-express-latest express@latest
+439 silly lockFile c30a01ab-express-latest express@latest
+440 info already installed express@4.13.4
+441 http 200 https://registry.npmjs.org/del/-/del-2.2.0.tgz
+442 silly lockFile 6a2e9ff9-stry-npmjs-org-del-del-2-2-0-tgz https://registry.npmjs.org/del/-/del-2.2.0.tgz
+443 silly lockFile 6a2e9ff9-stry-npmjs-org-del-del-2-2-0-tgz https://registry.npmjs.org/del/-/del-2.2.0.tgz
+444 silly lockFile aed99758-del-2-2-0 del@2.2.0
+445 silly lockFile aed99758-del-2-2-0 del@2.2.0
+446 silly lockFile f16e1df0-del-latest del@latest
+447 silly lockFile f16e1df0-del-latest del@latest
+448 http 304 https://registry.npmjs.org/hbs
+449 silly registry.get cb [ 304,
+449 silly registry.get   { date: 'Wed, 13 Apr 2016 22:04:18 GMT',
+449 silly registry.get     via: '1.1 varnish',
+449 silly registry.get     'cache-control': 'max-age=300',
+449 silly registry.get     etag: '"BAOEVUR87GKBV0FQTTB3IF56C"',
+449 silly registry.get     age: '0',
+449 silly registry.get     connection: 'keep-alive',
+449 silly registry.get     'x-served-by': 'cache-fra1232-FRA',
+449 silly registry.get     'x-cache': 'HIT',
+449 silly registry.get     'x-cache-hits': '1',
+449 silly registry.get     'x-timer': 'S1460585058.084249,VS0,VE740',
+449 silly registry.get     vary: 'Accept-Encoding' } ]
+450 verbose etag https://registry.npmjs.org/hbs from cache
+451 verbose addNamed [ 'hbs', '4.0.0' ]
+452 verbose addNamed [ '4.0.0', '4.0.0' ]
+453 silly lockFile c2e08e41-hbs-4-0-0 hbs@4.0.0
+454 verbose lock hbs@4.0.0 /home/oleksii/.npm/c2e08e41-hbs-4-0-0.lock
+455 silly lockFile c2e08e41-hbs-4-0-0 hbs@4.0.0
+456 silly lockFile c2e08e41-hbs-4-0-0 hbs@4.0.0
+457 silly lockFile fee9fd22-hbs-latest hbs@latest
+458 silly lockFile fee9fd22-hbs-latest hbs@latest
+459 info already installed hbs@4.0.0
+460 error Error: EACCES, mkdir '/home/oleksii/.npm/del/2.2.0'
+460 error  { [Error: EACCES, mkdir '/home/oleksii/.npm/del/2.2.0']
+460 error   errno: 3,
+460 error   code: 'EACCES',
+460 error   path: '/home/oleksii/.npm/del/2.2.0',
+460 error   parent: 'Animals' }
+461 error Please try running this command again as root/Administrator.
+462 error System Linux 3.13.0-37-generic
+463 error command "/usr/bin/node" "/usr/bin/npm" "install"
+464 error cwd /home/oleksii/WebstormProjects/Animals
+465 error node -v v0.10.37
+466 error npm -v 1.4.28
+467 error path /home/oleksii/.npm/del/2.2.0
+468 error code EACCES
+469 error errno 3
+470 error stack Error: EACCES, mkdir '/home/oleksii/.npm/del/2.2.0'
+471 verbose exit [ 3, true ]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="animalsApp" ng-controller="AnimalsCtrl">
+  <head>
+    <title>Animals</title>
+    <!--<base href="/">-->
+    <link rel='stylesheet' href='/javascripts/vendor/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <script type='text/javascript' src='/javascripts/vendor/jquery/dist/jquery.js'></script>
+    <script type='text/javascript' src='/javascripts/vendor/angular/angular.js'></script>
+    <script type='text/javascript' src='/javascripts/vendor/angular-route/angular-route.js'></script>
+    <script type='text/javascript' src='/javascripts/vendor/angular-messages/angular-messages.js'></script>
+    <script type='text/javascript' src='/app.js'></script>
+  </head>
+  <body>
+
+    <div class="container-fluid main">
+      <div class="row">
+          <div class="col-md-12 header">
+
+              <header>
+
+                  <div ng-controller="SidebarController">
+                      <div class="sidebar" sidebar-directive="state">
+                          <a href="#" id="navigation-toggle" ng-click="toggleState()">Menu</a>
+                          <ul class="navigation">
+                              <li class="navigation-items"> <a href="#/cats" ng-click="toggleState()">Cats</a>
+                              </li>
+                              <li class="navigation-items"> <a href="#/dogs" ng-click="toggleState()">Dogs</a>
+                              </li>
+                              <li class="navigation-items"> <a href="#/horses" ng-click="toggleState()">Horses</a>
+                              </li>
+                              <li class="navigation-items"> <a href="#/contactUs" ng-click="toggleState()">Contact Us</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <h3 id="animal-title">Animals (test app)</h3>
+
+              </header>
+
+          </div>
+
+          <div class="col-md-12 links">
+
+              <a ng-class="{ active: isActive('/cats') }" href="#/cats"><div class="col-md-3"><h4>Cats</h4></div></a>
+              <a ng-class="{ active: isActive('/dogs') }" href="#/dogs"><div class="col-md-3"><h4>Dogs</h4></div></a>
+              <a ng-class="{ active: isActive('/horses') }" href="#/horses"><div class="col-md-3"><h4>Horses</h4></div></a>
+              <a ng-class="{ active: isActive('/contactUs') }" href="#/contactUs"><div class="col-md-3"><h4>Contact Us</h4></div></a>
+
+          </div>
+
+          <div class="col-md-12 body">
+
+              <div ng-view></div>
+
+          </div>
+
+          <div class="col-md-12 footer">
+
+              <footer>
+                  <h4 id="animal-footer">Animals footer (angular test app)</h4>
+              </footer>
+
+          </div>
+
+          <div ng-controller='MyCtrl'>
+              <button class="pull-right help" ng-click='toggleModal()'>Help</button>
+              <modal-dialog show='modalShown' width='400px' height='60%'>
+                  <div class="modal-header">Help Modal</div>
+                  <div class="modal-body">
+                      <button ng-click="yesButton()">Yes</button>
+                      <button class="pull-right" ng-click="noButton()">No</button>
+                  </div>
+              </modal-dialog>
+          </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

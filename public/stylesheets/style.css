@@ -1,0 +1,180 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.links {
+  padding: 0;
+}
+
+.main {
+  max-height: 100vh;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.header {
+  height: 100px;
+}
+
+#animal-title {
+  padding-top: 40px;
+}
+
+.links {
+  height: 40px;
+}
+
+.body {
+  height: 250px;
+  background: rgba(3,159,244,0.2);
+}
+
+.footer {
+  height: 40px;
+}
+
+#animal-footer {
+  padding-top: 25px;
+}
+
+.active div {
+  background: rgba(3,159,244,0.2);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+.sidebar {
+  position : absolute;
+  top : 0;
+  left : -451px;
+  transition : 500ms left;
+  z-index: 2;
+}
+#navigation-toggle {
+  position : absolute;
+  left : 470px;
+  top: 20px;
+  background: rgba(3,159,244,0.8);
+  color : white;
+  text-decoration : none;
+  padding : 5px;
+}
+.show #navigation-toggle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: rgba(3,159,244,0.2);
+  background: rgba(3,159,244,0.2);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.show {
+  left : 0;
+}
+.navigation {
+  position: fixed;
+  list-style : none;
+  padding : 0;
+  margin : 0;
+  height: 500px;
+  width: 400px;
+  background-color : #444;
+  z-index: 4;
+}
+.navigation-items a {
+  display : block;
+  color : white;
+  line-height : 2em;
+  text-decoration : none;
+  padding : 10px 30px;
+  width : 400px;
+
+}
+.navigation-items a:hover {
+  background-color : rgba(3,159,244,0.2)
+}
+
+.ng-modal-overlay {
+  /* A dark translucent div that covers the whole screen */
+  position:absolute;
+  z-index:9999;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(3,159,244,0.2);
+  opacity: 0.8;
+}
+.ng-modal-dialog {
+  /* A centered div above the overlay with a box shadow. */
+  z-index:10000;
+  position: absolute;
+  width: 50%; /* Default */
+
+  /* Center the dialog */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+  background-color: #fff;
+}
+.ng-modal-dialog-content {
+  padding:10px;
+  text-align: left;
+}
+.ng-modal-close {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 120%;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'arial', 'sans-serif';
+}
+
+.my-form {
+  padding: 10px;
+}
+
+input[type="email"] {
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+input[type="text"] {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin: 15px;
+}
+
+.help {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background: rgba(3,159,244,0.8);
+  color : white;
+  text-decoration : none;
+}
+
+.modal-body button {
+  margin: 100px 20px;
+  width: 100px;
+  background: rgba(3,159,244,0.8);
+  color : white;
+  text-decoration : none;
+}

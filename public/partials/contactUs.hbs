@@ -1,0 +1,35 @@
+<div class="col-md-3"></div>
+<div class="col-md-6 my-form" ng-controller="FormCtrl">
+
+    <form name="form" novalidate>
+        <input type="email"
+               class="form-control input-sm"
+               ng-model="email"
+               name="email"
+               placeholder="enter your email"
+               email
+               required/>
+        <br>
+        <div ng-show="form.email.$error.email">The value is not a valid email!</div>
+        <div ng-show="form.email.$error.required">You did not enter email!</div>
+        <br>
+        <input type="text"
+               class="form-control input-lg"
+               name="text"
+               ng-model="text"
+               ng-minlength="10"
+               placeholder="enter your message"
+               required />
+        <div ng-messages="form.text.$error" role="alert">
+            <div ng-message="required">You did not enter a field!</div>
+            <div ng-message="minlength">Your field is too short!</div>
+        </div>
+        <input type="submit"
+               class="pull-right"
+               name="submit"
+               ng-click="beautifulForm()"
+               value="Send">
+    </form>
+
+</div>
+<div class="col-md-3"></div>
